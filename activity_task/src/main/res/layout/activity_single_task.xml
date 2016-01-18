@@ -3,34 +3,22 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical"
-              tools:context="${relativePackage}.${activityClass}">
+              tools:context="net.mingfei.android.puzzle.easy.activity_task.SingleTaskActivity">
 
     <TextView
             android:id="@+id/instance"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-    <Button
-            android:id="@+id/standard"
-            android:text="standard"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-
-    <Button
-            android:id="@+id/single_top"
-            android:text="go to single top"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
     <Button
             android:id="@+id/single_task"
-            android:text="go to single task"
+            android:text="single task"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
     <Button
-            android:id="@+id/single_instance"
-            android:text="go to single instance"
+            android:id="@+id/standard"
+            android:text="go to standard"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
-
 </LinearLayout>
