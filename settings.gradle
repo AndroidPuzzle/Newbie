@@ -1,1 +1,1 @@
-include ':activity_task'
+include ':activity_task', ':activity_lifecycle'
