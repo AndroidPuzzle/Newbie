@@ -1,9 +1,10 @@
-package net.mingfei.android.puzzle.activity_lifecycle.app;
+package net.mingfei.android.puzzle.easy.activity_lifecycle;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import net.mingfei.android.puzzle.activity_lifecycle.app.R;
 
 public class MainActivity extends Activity {
 

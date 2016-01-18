@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ActivityTask</string>
+    <string name="app_name">activity_task</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_single_top">SingleTopActivity</string>
     <string name="action_settings">Settings</string>
