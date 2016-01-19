@@ -3,7 +3,7 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical"
-              tools:context="net.mingfei.android.puzzle.easy.activity_task.SingleTaskActivity">
+              tools:context="net.mingfei.android.puzzle.newbie.activity_task.SingleTaskActivity">
 
     <TextView
             android:id="@+id/instance"

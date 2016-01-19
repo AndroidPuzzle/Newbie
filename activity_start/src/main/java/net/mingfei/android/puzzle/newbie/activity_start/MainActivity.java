@@ -1,4 +1,4 @@
-package net.mingfei.android.puzzle.easy.activity_start;
+package net.mingfei.android.puzzle.newbie.activity_start;
 
 import android.app.Activity;
 import android.content.Intent;

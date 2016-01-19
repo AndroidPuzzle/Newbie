@@ -1,4 +1,4 @@
-package net.mingfei.android.puzzle.easy.activity_lifecycle;
+package net.mingfei.android.puzzle.newbie.activity_lifecycle;
 
 import android.app.Activity;
 import android.content.Intent;

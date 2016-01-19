@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="net.mingfei.android.puzzle.easy.activity_lifecycle">
+          package="net.mingfei.android.puzzle.newbie.activity_lifecycle">
 
     <application
             android:allowBackup="true"

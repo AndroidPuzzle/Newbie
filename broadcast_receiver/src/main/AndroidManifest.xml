@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="net.mingfei.android.puzzle.easy.broadcast_receiver">
+          package="net.mingfei.android.puzzle.newbie.broadcast_receiver">
 
     <uses-permission android:name="android.permission.RECEIVE_SMS"/>
     <uses-permission android:name="android.permission.READ_SMS"/>

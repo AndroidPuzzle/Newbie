@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="net.mingfei.android.puzzle.easy.intent">
+          package="net.mingfei.android.puzzle.newbie.intent">
 
     <application
             android:allowBackup="true"

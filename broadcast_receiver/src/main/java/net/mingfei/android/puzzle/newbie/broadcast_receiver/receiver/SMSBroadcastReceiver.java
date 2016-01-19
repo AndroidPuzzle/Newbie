@@ -1,4 +1,4 @@
-package net.mingfei.android.puzzle.easy.broadcast_receiver.receiver;
+package net.mingfei.android.puzzle.newbie.broadcast_receiver.receiver;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

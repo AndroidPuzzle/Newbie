@@ -1,4 +1,4 @@
-package net.mingfei.android.puzzle.easy.activity_task;
+package net.mingfei.android.puzzle.newbie.activity_task;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -7,15 +7,15 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class SingleTaskActivity extends Activity implements View.OnClickListener {
+public class SingleInstanceActivity extends Activity implements View.OnClickListener {
 
     private TextView instance;
-    private Button singleTask, standard;
+    private Button singleInstance, standard;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_single_task);
+        setContentView(R.layout.activity_single_instance);
 
         initView();
         refreshView();
@@ -27,10 +27,10 @@ public class SingleTaskActivity extends Activity implements View.OnClickListener
 
     private void initView() {
         instance = (TextView) findViewById(R.id.instance);
-        singleTask = (Button) findViewById(R.id.single_task);
+        singleInstance = (Button) findViewById(R.id.single_instance);
         standard = (Button) findViewById(R.id.standard);
 
-        singleTask.setOnClickListener(this);
+        singleInstance.setOnClickListener(this);
         standard.setOnClickListener(this);
     }
 
@@ -38,14 +38,13 @@ public class SingleTaskActivity extends Activity implements View.OnClickListener
     public void onClick(View v) {
         Intent intent;
         switch (v.getId()) {
-            case R.id.single_task:
+            case R.id.single_instance:
                 intent = new Intent(this, getClass());
                 startActivity(intent);
                 break;
             case R.id.standard:
                 intent = new Intent(this, StandardActivity.class);
                 startActivity(intent);
-                break;
             default:
                 break;
         }

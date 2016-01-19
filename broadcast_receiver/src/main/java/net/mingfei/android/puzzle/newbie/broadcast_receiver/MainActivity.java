@@ -1,4 +1,4 @@
-package net.mingfei.android.puzzle.easy.broadcast_receiver;
+package net.mingfei.android.puzzle.newbie.broadcast_receiver;
 
 import android.app.Activity;
 import android.content.BroadcastReceiver;
@@ -11,7 +11,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
-import net.mingfei.android.puzzle.easy.broadcast_receiver.receiver.SMSBroadcastReceiver;
 
 /**
  * @author mingfei.net@Gmail.com
