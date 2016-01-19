@@ -1,1 +1,1 @@
-include ':activity_task', ':activity_lifecycle', ':activity_start', ':broadcast_receiver', ':intent'
+include ':activity_task', ':activity_lifecycle', ':activity_start', ':broadcast_receiver', ':intent', ':service'

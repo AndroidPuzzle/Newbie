@@ -67,6 +67,9 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 Log.e("demo", "send broadcast...");
                 intent = new Intent(INTENT_ACTION);
                 sendBroadcast(intent);
+                // TODO: 1/19/16  
+//                sendOrderedBroadcast();
+//                sendStickyBroadcast();
                 break;
             case R.id.send_sms:
                 sendSMS();
