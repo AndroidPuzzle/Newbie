@@ -34,14 +34,14 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
     @Override
     public void onClick(View view) {
-        Intent intent = new Intent(this, FirstService.class);
+        Intent intent;
         switch (view.getId()) {
             case R.id.start_first_service:
-                Log.e("demo", "start first service");
+                intent = new Intent(this, FirstService.class);
                 startService(intent);
                 break;
             case R.id.stop_first_service:
-                Log.e("demo", "stop first service");
+                intent = new Intent(this, FirstService.class);
                 stopService(intent);
             default:
                 break;

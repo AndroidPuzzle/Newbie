@@ -19,6 +19,12 @@ public class FirstService extends Service {
     }
 
     @Override
+    public int onStartCommand(Intent intent, int flags, int startId) {
+        Log.e("demo", "first service on start command...");
+        return super.onStartCommand(intent, flags, startId);
+    }
+
+    @Override
     public void onDestroy() {
         super.onDestroy();
         Log.e("demo", "first service on destroy...");

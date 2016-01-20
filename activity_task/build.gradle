@@ -17,7 +17,7 @@ android {
     buildToolsVersion "23.0.2"
 
     defaultConfig {
-        applicationId "net.mingfei.android.puzzle.easy.activity_task"
+        applicationId "net.mingfei.android.puzzle.newbie.activity_task"
         minSdkVersion 9
         targetSdkVersion 23
         versionCode 1
