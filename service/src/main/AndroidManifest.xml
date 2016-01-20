@@ -14,6 +14,7 @@
         </activity>
 
         <service android:name=".service.FirstService"/>
+        <service android:name=".service.SecondService"/>
     </application>
 
 </manifest>

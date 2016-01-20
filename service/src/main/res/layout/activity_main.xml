@@ -15,4 +15,16 @@
             android:text="stop first service"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
+
+    <Button
+            android:id="@+id/bind_second_service"
+            android:text="bind second  service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <Button
+            android:id="@+id/unbind_second_service"
+            android:text="unbind second service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
 </LinearLayout>
