@@ -17,6 +17,18 @@
             android:layout_height="wrap_content"/>
 
     <Button
+            android:id="@+id/start_second_service"
+            android:text="start second service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <Button
+            android:id="@+id/stop_second_service"
+            android:text="stop second service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <Button
             android:id="@+id/bind_second_service"
             android:text="bind second  service"
             android:layout_width="match_parent"
@@ -25,6 +37,42 @@
     <Button
             android:id="@+id/unbind_second_service"
             android:text="unbind second service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <Button
+            android:id="@+id/start_foreground_service"
+            android:text="start foreground service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <Button
+            android:id="@+id/stop_foreground_service"
+            android:text="stop foreground service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <Button
+            android:id="@+id/start_remote_service"
+            android:text="start remote service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <Button
+            android:id="@+id/stop_remote_service"
+            android:text="stop remote service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <Button
+            android:id="@+id/start_restart_service"
+            android:text="start restart service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <Button
+            android:id="@+id/stop_restart_service"
+            android:text="stop restart service"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 </LinearLayout>

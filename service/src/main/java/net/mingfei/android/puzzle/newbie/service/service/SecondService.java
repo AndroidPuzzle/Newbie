@@ -4,6 +4,7 @@ import android.app.Service;
 import android.content.Intent;
 import android.os.Binder;
 import android.os.IBinder;
+import android.os.Process;
 import android.support.annotation.Nullable;
 import android.util.Log;
 
@@ -19,6 +20,7 @@ public class SecondService extends Service {
     public void onCreate() {
         super.onCreate();
         Log.e("demo", "second service on create...");
+        Log.e("demo", getClass().getSimpleName() + " in thread: " + Thread.currentThread().getId());
     }
 
     @Override
@@ -41,8 +43,14 @@ public class SecondService extends Service {
     }
 
     public class MyBinder extends Binder {
+
         public void doSomething() {
-            Log.e("demo", "do something...");
+            new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    Log.e("demo", "do something... in thread: " + Thread.currentThread().getId());
+                }
+            }).start();
         }
     }
 }
