@@ -10,23 +10,48 @@ import android.os.Process;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import net.mingfei.android.puzzle.newbie.service.annotation.ContentView;
+import net.mingfei.android.puzzle.newbie.service.annotation.ViewInject;
 import net.mingfei.android.puzzle.newbie.service.service.*;
+import net.mingfei.android.puzzle.newbie.service.util.ViewInjectUtil;
 
 /**
  * Created by mingfei.net@Gmail.com
  * 2016/1/19.
  */
+@ContentView(value = R.layout.activity_main)
 public class MainActivity extends Activity implements View.OnClickListener {
 
-    private Button startFirstService, stopFirstService, startSecondService, stopSecondService, bindSecondService, unbindSecondService, startForegroundService, stopForegroundService, startRemoteService, stopRemoteService, startRestartService, stopRestartService;
-
-    private SecondService.MyBinder myBinder;
+    @ViewInject(value = R.id.start_first_service)
+    private Button startFirstService;
+    @ViewInject(value = R.id.stop_first_service)
+    private Button stopFirstService;
+    @ViewInject(value = R.id.start_second_service)
+    private Button startSecondService;
+    @ViewInject(value = R.id.stop_second_service)
+    private Button stopSecondService;
+    @ViewInject(value = R.id.bind_second_service)
+    private Button bindSecondService;
+    @ViewInject(value = R.id.unbind_second_service)
+    private Button unbindSecondService;
+    @ViewInject(value = R.id.start_foreground_service)
+    private Button startForegroundService;
+    @ViewInject(value = R.id.stop_foreground_service)
+    private Button stopForegroundService;
+    @ViewInject(value = R.id.start_remote_service)
+    private Button startRemoteService;
+    @ViewInject(value = R.id.stop_remote_service)
+    private Button stopRemoteService;
+    @ViewInject(value = R.id.start_restart_service)
+    private Button startRestartService;
+    @ViewInject(value = R.id.stop_restart_service)
+    private Button stopRestartService;
 
     private ServiceConnection serviceConnection = new ServiceConnection() {
         @Override
         public void onServiceConnected(ComponentName name, IBinder service) {
             Log.e("demo", "on service connected...");
-            myBinder = (SecondService.MyBinder) service;
+            SecondService.MyBinder myBinder = (SecondService.MyBinder) service;
             myBinder.doSomething();
         }
 
@@ -39,26 +64,17 @@ public class MainActivity extends Activity implements View.OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
 
         initView();
-
+        setListener();
         Log.e("demo", getClass().getSimpleName() + "in process: " + Process.myPid() + ", in thread: " + Thread.currentThread().getId());
     }
 
     private void initView() {
-        startFirstService = (Button) findViewById(R.id.start_first_service);
-        stopFirstService = (Button) findViewById(R.id.stop_first_service);
-        startSecondService = (Button) findViewById(R.id.start_second_service);
-        stopSecondService = (Button) findViewById(R.id.stop_second_service);
-        bindSecondService = (Button) findViewById(R.id.bind_second_service);
-        unbindSecondService = (Button) findViewById(R.id.unbind_second_service);
-        startForegroundService = (Button) findViewById(R.id.start_foreground_service);
-        stopForegroundService = (Button) findViewById(R.id.stop_foreground_service);
-        startRemoteService = (Button) findViewById(R.id.start_remote_service);
-        stopRemoteService = (Button) findViewById(R.id.stop_remote_service);
-        startRestartService = (Button) findViewById(R.id.start_restart_service);
-        stopRestartService = (Button) findViewById(R.id.stop_restart_service);
+        ViewInjectUtil.inject(this);
+    }
+
+    private void setListener() {
 
         startFirstService.setOnClickListener(this);
         stopFirstService.setOnClickListener(this);
